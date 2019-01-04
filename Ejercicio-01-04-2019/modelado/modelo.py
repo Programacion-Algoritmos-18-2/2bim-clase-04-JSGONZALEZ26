@@ -1,10 +1,12 @@
 class Equipo(object):
 
-    def __init__(self, nom, ciudad, camp, numJ):
+    def __init__(self, nom, ciudad, camp, numJ):  # Constructor
         self.nombre = nom
         self.ciudad = ciudad
         self.campeonatos = int(camp)
         self.numJugadores = int(numJ)
+
+# Getters & Setters
 
     def setNombre(self, nom):
         self.nombre = nom
@@ -29,6 +31,8 @@ class Equipo(object):
 
     def getNumJugadores(self):
         return self.numJugadores
+
+# Seobrescritura de método
 
     def __repr__(self):
         return "%s %s %d %d\n" % (self.getNombre(), self.getCiudad(), self.getCampeonatos(), self.getNumJugadores())

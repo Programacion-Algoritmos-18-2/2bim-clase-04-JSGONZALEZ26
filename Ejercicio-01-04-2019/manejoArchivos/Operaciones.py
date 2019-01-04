@@ -1,4 +1,4 @@
-class Operaciones(object):
+class Operaciones(object):  # Clase que contiene los procesos para ordenar
 
     def __init__(self, listado):
         self.equiposOrdenados = listado

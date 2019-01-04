@@ -1,7 +1,7 @@
-import codecs
+import codecs  # Importación del codecs
 
 
-class MiArchivo:
+class MiArchivo:  # Clase para la lectura del archivo original
 
     def __init__(self):
         self.archivo = codecs.open("Archivos/informacion.csv", "r")
@@ -13,7 +13,7 @@ class MiArchivo:
         self.archivo.close()
 
 
-class ArchivoEscribir:
+class ArchivoEscribir:  # Clase para la escritura del nuevo archivo
     def __init__(self):
         self.archivo = codecs.open("Archivos/informacionOrdenada.csv", "a")
 
